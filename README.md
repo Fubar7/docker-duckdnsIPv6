@@ -12,4 +12,4 @@ Install guide:
       SUBDOMAINS  = subdomain1,subdomain2 
       TOKEN       = token
       UPDATE_IPV6 = True for IPv6, False for Ipv4
-  4) Try out if it dosend work with Network Type: Host
+  4) Try out if it dosen't work with Network Type: Host
