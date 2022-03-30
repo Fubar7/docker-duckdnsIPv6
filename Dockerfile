@@ -13,7 +13,10 @@ RUN \
   apk add --no-cache \
   curl
 
-# environment settings - optional
+# environment settings
+# s6-overlay is need for serveral useage. In this docker it is used for:
+#      - the s6-setuidgid to run as root
+#      - tasks for initialization are in etc/cont-init.d
  ENV S6_BEHAVIOUR_IF_STAGE2_FAILS=2
 
 

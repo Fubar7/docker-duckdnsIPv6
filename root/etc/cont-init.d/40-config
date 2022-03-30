@@ -1,12 +1,11 @@
-#!/usr/bin/with-contenv bash
-
-  #Check to make sure the subdomain and token are set
+  #Check if the there if the necessary variables are set up in the docker run command.  
 if [ -z "$SUBDOMAINS" ] || [ -z "$TOKEN" ]; then
   echo "Please pass both your subdomain(s) and token as environment variables in your docker run command. See docker info for more details."
   exit 1
-else
+  #else check if there is the config file with the variables.
+else          
   echo "Retrieving subdomain and token from the environment variables"
-  echo -e "SUBDOMAINS=\"${SUBDOMAINS}\" TOKEN=\"${TOKEN}\"" > /app/duck.conf
+  echo -e "SUBDOMAINS=\"${SUBDOMAINS}\" TOKEN=\"${TOKEN}\" UPDATE_IPV6=\"${UPDATE_IPV6}\"" > /app/duck.conf
 fi
 
 # modify crontab if logging to file
