@@ -9,7 +9,13 @@ Install guide:
   1) Register your Subdomain on Duckdns Website
   2) Download the Docker in Unraid 
   3) Fill out the needed Parameters
-      SUBDOMAINS  = subdomain1,subdomain2 
-      TOKEN       = token
-      UPDATE_IPV6 = True for IPv6, False for Ipv4
+ 
+      | Parameters | declaration |
+      | :----: | --- |
+      | SUBDOMAINS | subdomain1,subdomain2|
+      | TOKEN | token|
+      | UPDATE_IPV6 | True for IPv6, False for Ipv4|
+
   4) Try out if it dosen't work with Network Type: Host
+
+
