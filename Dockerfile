@@ -2,7 +2,7 @@
 FROM alpine:latest
 
 #
-LABEL Name=dockerduckdnsipv6 Version=0.0.1
+LABEL Name=dockerduckdnsipv6 Version=1.0
 LABEL maintainer="fubar7 <mail.fub@yahoo.com>"
 
 
