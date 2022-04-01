@@ -1,5 +1,6 @@
 #select base image
-FROM alpine:latest
+#FROM alpine:latest
+FROM ghcr.io/linuxserver/baseimage-alpine:3.13
 
 #
 LABEL Name=dockerduckdnsipv6 Version=1.0
