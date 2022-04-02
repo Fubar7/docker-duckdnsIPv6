@@ -7,6 +7,7 @@ LABEL Name=dockerduckdnsipv6 Version=1.0
 LABEL maintainer="fubar7 <mail.fub@yahoo.com>"
 
 
+
 #Install updates für alpine
 # --no cache to keep the image small
 RUN \
@@ -15,9 +16,8 @@ RUN \
   curl
 
 # environment settings
-# s6-overlay is need for serveral useage. In this docker it is used for:
-#      - the s6-setuidgid to run as root
-#      - tasks for initialization are in etc/cont-init.d
+# S6-overlay is included in the image from linuxserver/Baseimage
+
  ENV S6_BEHAVIOUR_IF_STAGE2_FAILS=2
 
 
